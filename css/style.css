@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  * {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+  
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #eee;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header input[type="search"] {
+    padding: 5px;
+    font-size: 1em;
+  }
+  
+  .title button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .main {
+    display: flex;
+    height: 100vh;
+  }
+
+  .sideBar {
+    width: 20%;
+    /* background-color: red; */
+    border-right: 1px solid grey;
+  }
+
+  .sideBar li {
+    width: 100px;
+    margin: 30px auto;
+    height: 30px;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+
+  .sideBar li a {
+    display: block;
+    width: 100%;
+    margin: auto;
+    line-height: 30px;
+    text-align: center;
+    color: #0073e6;
+  }
+
+  .sideBar li a:hover {
+    color: white;
+    cursor: pointer;
+  }
+
+  .content {
+    flex: 1;
+    /* background-color: green; */
+    padding: 30px 0px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px ;
+  }
+  
+  .question-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 30px;
+  }
+
+  .question-title div {
+    margin-right: 100px;
+  }
+
+  .question-title div button {
+    padding: 5px 10px;
+    margin-right: -10px;
+  }
+
+  .question-item {
+    border-top: 1px solid grey;
+    margin-top: 50px;
+  }
+  .question-item li {
+    /* height: 50px; */
+    /* background-color: blue; */
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    text-align: center;
+    /* padding-bottom: 30px; */
+  }
+
+  .question-item .view {
+    color: #666;
+    flex: 1;
+  }
+
+  .question-item .date {
+    color: #666;
+    flex: 2;
+  }
+
+  .question-item .author {
+    color: red;
+    flex: 1;
+  }
+
+  .question-item .problem {
+    width: 400px;
+    /* background-color: orange; */
+    color: #0073e6;
+    flex: 4;
+    text-align: left;
+  }
+
+  .problem-tag {
+    /* display: flex; */
+    margin-left: -20px;
+    margin-top: 10px;
+    /* height: 50px; */
+  }
+  .problem {
+    display: flex; /* 设为Flex容器 */
+    flex-direction: column; /* 子元素垂直排列 */
+  }
+  
+  .problem p {
+    margin: 0; /* 移除默认的段落外边距 */
+  }
+  
+  .problem-tag {
+    display: flex; /* 设为Flex容器 */
+    align-items: stretch; /* 子元素拉伸以匹配容器高度 */
+  }
+
+  .question-item .problem a {
+    display: block;
+    padding: 2px 10px;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+
+  .tag-item {
+    padding: 50px;
+  }
+  
+  .tag-item ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .tag-item li {
+    /* width: 100px;
+    height: 50px; */
+    width: 33%;
+    /* border: 1px solid blue; */
+    margin-top: 50px;
+  }
+
+  .tag-item li a {
+    display: block;
+    width: 150px;
+    /* height: 50px; */
+    margin: auto;
+    border: 1px dashed #000;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .tag-item li a h1 {
+    color: #0073e6;
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  .tag-item li a p {
+    color: #000;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+    }
+  
+    header input[type="search"] {
+      margin-bottom: 10px;
+    }
+  }
+  
